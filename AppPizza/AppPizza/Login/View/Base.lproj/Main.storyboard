@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="AppPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1p-tF-RHm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="assinatura" translatesAutoresizingMaskIntoConstraints="NO" id="Vp6-jb-vId">
+                                        <rect key="frame" x="11.5" y="25.5" width="297" height="176"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Vp6-jb-vId" firstAttribute="centerY" secondItem="E1p-tF-RHm" secondAttribute="centerY" id="5xJ-hd-7gR"/>
+                                    <constraint firstItem="Vp6-jb-vId" firstAttribute="centerY" secondItem="E1p-tF-RHm" secondAttribute="centerY" id="8hi-xW-cHi"/>
+                                    <constraint firstItem="Vp6-jb-vId" firstAttribute="centerX" secondItem="E1p-tF-RHm" secondAttribute="centerX" id="Zat-VR-wKU"/>
+                                    <constraint firstItem="Vp6-jb-vId" firstAttribute="centerY" secondItem="E1p-tF-RHm" secondAttribute="centerY" id="hCM-bO-2t5"/>
+                                    <constraint firstItem="Vp6-jb-vId" firstAttribute="centerX" secondItem="E1p-tF-RHm" secondAttribute="centerX" id="nEt-Hn-TCV"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLN-u9-dvg">
+                                <rect key="frame" x="20" y="298" width="280" height="117"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="usuário" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3s-Pd-deW">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.54509803921568623" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awt-Ou-DYl">
+                                        <rect key="frame" x="0.0" y="67" width="280" height="50"/>
+                                        <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.5450980392" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="wUk-xS-aR8"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgW-nu-RGL">
+                                <rect key="frame" x="56" y="470" width="208" height="53"/>
+                                <color key="backgroundColor" red="0.47843137254901957" green="0.77647058823529413" blue="0.30980392156862746" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="FIX-P1-KdN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyl-1q-aIE">
+                                <rect key="frame" x="22" y="251" width="68.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.17254901960784313" blue="0.18823529411764706" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KLN-u9-dvg" secondAttribute="trailing" constant="20" id="0yc-7I-Omg"/>
+                            <constraint firstItem="KLN-u9-dvg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1uV-b8-zkh"/>
+                            <constraint firstItem="E1p-tF-RHm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5s1-Xa-Zdn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VgW-nu-RGL" secondAttribute="trailing" constant="56" id="Eta-Ea-A66"/>
+                            <constraint firstItem="VgW-nu-RGL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="H5U-Oq-ZLc"/>
+                            <constraint firstItem="iyl-1q-aIE" firstAttribute="top" secondItem="E1p-tF-RHm" secondAttribute="bottom" constant="24" id="LqF-EQ-Gk2"/>
+                            <constraint firstItem="E1p-tF-RHm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="NfC-67-cYz"/>
+                            <constraint firstItem="E1p-tF-RHm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RRv-et-xlw"/>
+                            <constraint firstItem="iyl-1q-aIE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="erY-1X-y04"/>
+                            <constraint firstItem="VgW-nu-RGL" firstAttribute="top" secondItem="KLN-u9-dvg" secondAttribute="bottom" constant="55" id="kmw-1O-AlH"/>
+                            <constraint firstItem="KLN-u9-dvg" firstAttribute="top" secondItem="iyl-1q-aIE" secondAttribute="bottom" constant="18" id="yeA-ff-XdQ"/>
+                            <constraint firstItem="E1p-tF-RHm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zei-Gn-QFC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="assinatura" width="297" height="176"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
