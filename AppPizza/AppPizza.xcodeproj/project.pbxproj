@@ -13,6 +13,15 @@
 		AC5233AD2667E7920072976C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5233AB2667E7920072976C /* Main.storyboard */; };
 		AC5233AF2667E79E0072976C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5233AE2667E79E0072976C /* Assets.xcassets */; };
 		AC5233B22667E79E0072976C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5233B02667E79E0072976C /* LaunchScreen.storyboard */; };
+		AC5233F8266910610072976C /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5233F7266910610072976C /* ChoiceViewController.swift */; };
+		AC5233FC266911BC0072976C /* ChoiceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5233FB266911BC0072976C /* ChoiceStoryboard.storyboard */; };
+		AC52340026691B0A0072976C /* PizzaManagerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5233FF26691B0A0072976C /* PizzaManagerApi.swift */; };
+		AC52340626691E630072976C /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52340526691E630072976C /* PizzaModel.swift */; };
+		ACB46073266967230078DC20 /* ChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46072266967230078DC20 /* ChoiceViewModel.swift */; };
+		ACB4607C266971CC0078DC20 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4607B266971CC0078DC20 /* HttpError.swift */; };
+		ACB46082266992720078DC20 /* ImageUrlConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46081266992720078DC20 /* ImageUrlConvert.swift */; };
+		ACB460892669A3770078DC20 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB460872669A3770078DC20 /* PizzaTableViewCell.swift */; };
+		ACB4608A2669A3770078DC20 /* PizzaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB460882669A3770078DC20 /* PizzaTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		AC5233AE2667E79E0072976C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5233B12667E79E0072976C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5233B32667E79E0072976C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5233F7266910610072976C /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		AC5233FB266911BC0072976C /* ChoiceStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChoiceStoryboard.storyboard; sourceTree = "<group>"; };
+		AC5233FF26691B0A0072976C /* PizzaManagerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaManagerApi.swift; sourceTree = "<group>"; };
+		AC52340526691E630072976C /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		ACB46072266967230078DC20 /* ChoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewModel.swift; sourceTree = "<group>"; };
+		ACB4607B266971CC0078DC20 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		ACB46081266992720078DC20 /* ImageUrlConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlConvert.swift; sourceTree = "<group>"; };
+		ACB460872669A3770078DC20 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewCell.swift; sourceTree = "<group>"; };
+		ACB460882669A3770078DC20 /* PizzaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,8 @@
 		AC5233A42667E7920072976C /* AppPizza */ = {
 			isa = PBXGroup;
 			children = (
+				ACB4607A266971C10078DC20 /* Utils */,
+				AC5233F226690FFC0072976C /* Choice */,
 				AC5233BF2667F6200072976C /* Login */,
 				AC5233A52667E7920072976C /* AppDelegate.swift */,
 				AC5233A72667E7920072976C /* SceneDelegate.swift */,
@@ -89,22 +109,85 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		AC5233BE2667F5630072976C /* View Model */ = {
+		AC5233BE2667F5630072976C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "View Model";
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		AC5233BF2667F6200072976C /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				AC5233BE2667F5630072976C /* View Model */,
+				AC5233BE2667F5630072976C /* ViewModel */,
 				AC5233BD2667F5270072976C /* Model */,
 				AC5233BA2667F4F50072976C /* View */,
 				AC5233BB2667F5040072976C /* Controller */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		AC5233F226690FFC0072976C /* Choice */ = {
+			isa = PBXGroup;
+			children = (
+				AC5233FE26691A740072976C /* API */,
+				AC5233F3266910110072976C /* ViewModel */,
+				AC5233F42669101C0072976C /* Model */,
+				AC5233F5266910230072976C /* View */,
+				AC5233F6266910290072976C /* Controller */,
+			);
+			path = Choice;
+			sourceTree = "<group>";
+		};
+		AC5233F3266910110072976C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACB46072266967230078DC20 /* ChoiceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC5233F42669101C0072976C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC52340526691E630072976C /* PizzaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC5233F5266910230072976C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC5233FB266911BC0072976C /* ChoiceStoryboard.storyboard */,
+				ACB460882669A3770078DC20 /* PizzaTableViewCell.xib */,
+				ACB460872669A3770078DC20 /* PizzaTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC5233F6266910290072976C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC5233F7266910610072976C /* ChoiceViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC5233FE26691A740072976C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AC5233FF26691B0A0072976C /* PizzaManagerApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ACB4607A266971C10078DC20 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ACB4607B266971CC0078DC20 /* HttpError.swift */,
+				ACB46081266992720078DC20 /* ImageUrlConvert.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +249,8 @@
 			files = (
 				AC5233B22667E79E0072976C /* LaunchScreen.storyboard in Resources */,
 				AC5233AF2667E79E0072976C /* Assets.xcassets in Resources */,
+				ACB4608A2669A3770078DC20 /* PizzaTableViewCell.xib in Resources */,
+				AC5233FC266911BC0072976C /* ChoiceStoryboard.storyboard in Resources */,
 				AC5233AD2667E7920072976C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,8 +263,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5233AA2667E7920072976C /* ViewController.swift in Sources */,
+				ACB4607C266971CC0078DC20 /* HttpError.swift in Sources */,
 				AC5233A62667E7920072976C /* AppDelegate.swift in Sources */,
+				AC52340626691E630072976C /* PizzaModel.swift in Sources */,
+				ACB460892669A3770078DC20 /* PizzaTableViewCell.swift in Sources */,
 				AC5233A82667E7920072976C /* SceneDelegate.swift in Sources */,
+				AC52340026691B0A0072976C /* PizzaManagerApi.swift in Sources */,
+				ACB46082266992720078DC20 /* ImageUrlConvert.swift in Sources */,
+				AC5233F8266910610072976C /* ChoiceViewController.swift in Sources */,
+				ACB46073266967230078DC20 /* ChoiceViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
