@@ -62,11 +62,22 @@
                     <connections>
                         <outlet property="pizzaTableView" destination="T6U-ko-91O" id="dzB-X0-R5l"/>
                         <outlet property="searchTextField" destination="qrq-Lr-i6P" id="JXG-QU-Lt0"/>
+                        <segue destination="qJf-V8-g4l" kind="show" identifier="detailSegue" id="uKF-mj-CCm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3f-eG-u4U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="86.956521739130437" y="109.82142857142857"/>
+        </scene>
+        <!--DetailStoryboard-->
+        <scene sceneID="McO-Ki-zAk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailStoryboard" id="qJf-V8-g4l" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="e3H-g0-3Jd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Rn-l9-3yx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="110"/>
         </scene>
     </scenes>
 </document>

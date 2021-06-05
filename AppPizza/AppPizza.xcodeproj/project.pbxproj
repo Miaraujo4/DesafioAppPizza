@@ -22,6 +22,9 @@
 		ACB46082266992720078DC20 /* ImageUrlConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46081266992720078DC20 /* ImageUrlConvert.swift */; };
 		ACB460892669A3770078DC20 /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB460872669A3770078DC20 /* PizzaTableViewCell.swift */; };
 		ACB4608A2669A3770078DC20 /* PizzaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB460882669A3770078DC20 /* PizzaTableViewCell.xib */; };
+		ACB4609B266AB6040078DC20 /* DetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB4609A266AB6040078DC20 /* DetailStoryboard.storyboard */; };
+		ACB4609E266AC6660078DC20 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4609D266AC6660078DC20 /* DetailViewController.swift */; };
+		ACB460A1266ADD910078DC20 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB460A0266ADD910078DC20 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		ACB46081266992720078DC20 /* ImageUrlConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlConvert.swift; sourceTree = "<group>"; };
 		ACB460872669A3770078DC20 /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewCell.swift; sourceTree = "<group>"; };
 		ACB460882669A3770078DC20 /* PizzaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PizzaTableViewCell.xib; sourceTree = "<group>"; };
+		ACB4609A266AB6040078DC20 /* DetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailStoryboard.storyboard; sourceTree = "<group>"; };
+		ACB4609D266AC6660078DC20 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ACB460A0266ADD910078DC20 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB4607A266971C10078DC20 /* Utils */,
+				ACB46095266AB4FC0078DC20 /* Detail */,
 				AC5233F226690FFC0072976C /* Choice */,
 				AC5233BF2667F6200072976C /* Login */,
 				AC5233A52667E7920072976C /* AppDelegate.swift */,
@@ -190,6 +197,48 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		ACB46095266AB4FC0078DC20 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				ACB46098266AB52C0078DC20 /* ViewModel */,
+				ACB46097266AB51F0078DC20 /* Model */,
+				ACB46096266AB5160078DC20 /* View */,
+				ACB46099266AB53A0078DC20 /* Controller */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		ACB46096266AB5160078DC20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACB4609A266AB6040078DC20 /* DetailStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACB46097266AB51F0078DC20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACB46098266AB52C0078DC20 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACB460A0266ADD910078DC20 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACB46099266AB53A0078DC20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACB4609D266AC6660078DC20 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +298,7 @@
 			files = (
 				AC5233B22667E79E0072976C /* LaunchScreen.storyboard in Resources */,
 				AC5233AF2667E79E0072976C /* Assets.xcassets in Resources */,
+				ACB4609B266AB6040078DC20 /* DetailStoryboard.storyboard in Resources */,
 				ACB4608A2669A3770078DC20 /* PizzaTableViewCell.xib in Resources */,
 				AC5233FC266911BC0072976C /* ChoiceStoryboard.storyboard in Resources */,
 				AC5233AD2667E7920072976C /* Main.storyboard in Resources */,
@@ -262,12 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB4609E266AC6660078DC20 /* DetailViewController.swift in Sources */,
 				AC5233AA2667E7920072976C /* ViewController.swift in Sources */,
 				ACB4607C266971CC0078DC20 /* HttpError.swift in Sources */,
 				AC5233A62667E7920072976C /* AppDelegate.swift in Sources */,
 				AC52340626691E630072976C /* PizzaModel.swift in Sources */,
 				ACB460892669A3770078DC20 /* PizzaTableViewCell.swift in Sources */,
 				AC5233A82667E7920072976C /* SceneDelegate.swift in Sources */,
+				ACB460A1266ADD910078DC20 /* DetailViewModel.swift in Sources */,
 				AC52340026691B0A0072976C /* PizzaManagerApi.swift in Sources */,
 				ACB46082266992720078DC20 /* ImageUrlConvert.swift in Sources */,
 				AC5233F8266910610072976C /* ChoiceViewController.swift in Sources */,
