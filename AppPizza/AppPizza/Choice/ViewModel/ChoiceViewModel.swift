@@ -5,7 +5,7 @@
 //  Created by Milena Pereira de Araujo on 03/06/21.
 //
 
-import UIKit
+import Foundation
 
 class ChoiceViewModel {
     
@@ -32,7 +32,7 @@ class ChoiceViewModel {
                 self.listPizza = pizzas
                 self.listPizzaHelper = pizzas
                 callback(true)
-            case .failure(let error):
+            case .failure( _):
                 callback(false)
             }
         }
@@ -51,6 +51,7 @@ class ChoiceViewModel {
         }
         callback()
     }
+    
     
 }
 

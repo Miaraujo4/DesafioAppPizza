@@ -15,6 +15,7 @@ class ChoiceViewController: UIViewController, UITableViewDataSource, UITableView
     
     // MARK: - Properties
     private let viewModel: ChoiceViewModel = ChoiceViewModel()
+    private let segueIdentifier: String = "detailSegue"
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -36,15 +37,18 @@ class ChoiceViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if self.view.endEditing(true) == true {
-            viewModel.getPizzas { didGetPizzas in
-                DispatchQueue.main.async {
-                    if didGetPizzas {
-                        self.pizzaTableView.reloadData()
-                    } else {
-                        print("No Data")
-                    }
-                }
+        self.view.endEditing(true)
+        viewModel.filterPizza(namePizza: searchTextField.text) {
+            pizzaTableView.reloadData()
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueIdentifier {
+            if let detailViewController: DetailViewController = segue.destination as? DetailViewController {
+                detailViewController.viewModelDetail.pizza = sender as? PizzaInfo
+                detailViewController.modalPresentationStyle = .fullScreen
             }
         }
     }
@@ -103,16 +107,9 @@ extension ChoiceViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        if self.view.endEditing(true) == true {
-            viewModel.getPizzas { didGetPizzas in
-                DispatchQueue.main.async {
-                    if didGetPizzas {
-                        self.pizzaTableView.reloadData()
-                    } else {
-                        print("No Data")
-                    }
-                }
-            }
+        self.view.endEditing(true)
+        viewModel.filterPizza(namePizza: searchTextField.text) {
+            pizzaTableView.reloadData()
         }
         
         return true
@@ -127,7 +124,10 @@ extension ChoiceViewController: UITextFieldDelegate {
         return true
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pizzaSelect = viewModel.listPizza[indexPath.row]
+        performSegue(withIdentifier: segueIdentifier, sender: pizzaSelect)
+    }
 }
 
 
