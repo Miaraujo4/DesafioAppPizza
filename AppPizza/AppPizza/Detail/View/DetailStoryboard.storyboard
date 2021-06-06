@@ -159,6 +159,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyButton" destination="ZQ1-fP-jIZ" id="Uwa-93-cV4"/>
                         <outlet property="pizzaDetailImage" destination="xfx-QH-Dy3" id="wE7-xU-M75"/>
                         <outlet property="pricePizzaLabel" destination="yhQ-ui-7oT" id="S4r-Bg-cKU"/>
                         <outlet property="sizeG" destination="70S-Y6-VDt" id="vM1-gI-kZd"/>
@@ -170,11 +171,22 @@
                         <outlet property="star4Detail" destination="q9V-jx-v5g" id="6Cv-cK-0YO"/>
                         <outlet property="star5Detail" destination="HfJ-x0-7dh" id="wEo-GR-BWI"/>
                         <outlet property="titleDetailLabel" destination="at8-Ed-NkL" id="dmR-cT-LF9"/>
+                        <segue destination="JS4-Ai-phu" kind="show" identifier="sucessSegue" id="pJg-Tc-rgV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hxN-cK-f7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-176.81159420289856" y="13.392857142857142"/>
+        </scene>
+        <!--SucessStoryboard-->
+        <scene sceneID="dnG-ul-12G">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SucessStoryboard" id="JS4-Ai-phu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iDs-3f-qMe"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ktx-P9-Ov2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="522" y="13"/>
         </scene>
     </scenes>
     <resources>
