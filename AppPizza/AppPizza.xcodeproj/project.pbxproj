@@ -25,6 +25,8 @@
 		ACB4609B266AB6040078DC20 /* DetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB4609A266AB6040078DC20 /* DetailStoryboard.storyboard */; };
 		ACB4609E266AC6660078DC20 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4609D266AC6660078DC20 /* DetailViewController.swift */; };
 		ACB460A1266ADD910078DC20 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB460A0266ADD910078DC20 /* DetailViewModel.swift */; };
+		ACB460AB266B19100078DC20 /* SucessStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB460AA266B19100078DC20 /* SucessStoryboard.storyboard */; };
+		ACB460B1266BD6D30078DC20 /* SucessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB460B0266BD6D30078DC20 /* SucessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		ACB4609A266AB6040078DC20 /* DetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailStoryboard.storyboard; sourceTree = "<group>"; };
 		ACB4609D266AC6660078DC20 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ACB460A0266ADD910078DC20 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		ACB460AA266B19100078DC20 /* SucessStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SucessStoryboard.storyboard; sourceTree = "<group>"; };
+		ACB460B0266BD6D30078DC20 /* SucessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SucessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB4607A266971C10078DC20 /* Utils */,
+				ACB460A9266B17BA0078DC20 /* Sucess */,
 				ACB46095266AB4FC0078DC20 /* Detail */,
 				AC5233F226690FFC0072976C /* Choice */,
 				AC5233BF2667F6200072976C /* Login */,
@@ -239,6 +244,31 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		ACB460A9266B17BA0078DC20 /* Sucess */ = {
+			isa = PBXGroup;
+			children = (
+				ACB460AE266BCCB30078DC20 /* Controller */,
+				ACB460AD266BCCA90078DC20 /* View */,
+			);
+			path = Sucess;
+			sourceTree = "<group>";
+		};
+		ACB460AD266BCCA90078DC20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACB460AA266B19100078DC20 /* SucessStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACB460AE266BCCB30078DC20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACB460B0266BD6D30078DC20 /* SucessViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,6 +332,7 @@
 				ACB4608A2669A3770078DC20 /* PizzaTableViewCell.xib in Resources */,
 				AC5233FC266911BC0072976C /* ChoiceStoryboard.storyboard in Resources */,
 				AC5233AD2667E7920072976C /* Main.storyboard in Resources */,
+				ACB460AB266B19100078DC20 /* SucessStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB460B1266BD6D30078DC20 /* SucessViewController.swift in Sources */,
 				ACB4609E266AC6660078DC20 /* DetailViewController.swift in Sources */,
 				AC5233AA2667E7920072976C /* ViewController.swift in Sources */,
 				ACB4607C266971CC0078DC20 /* HttpError.swift in Sources */,

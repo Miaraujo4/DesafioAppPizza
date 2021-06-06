@@ -36,6 +36,12 @@ class ChoiceViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.navigationBar.barTintColor = UIColor.black
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
         viewModel.filterPizza(namePizza: searchTextField.text) {
@@ -92,15 +98,21 @@ class ChoiceViewController: UIViewController, UITableViewDataSource, UITableView
             for position in 0...rating - 1 {
                 imageStars[position]?.image = #imageLiteral(resourceName: "starYellow")
             }
-        return cell
-    } else {
-    return UITableViewCell()
+            return cell
+        } else {
+            return UITableViewCell()
+        }
     }
-}
-
-func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 106.0
-}
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let pizzaSelect = viewModel.listPizza[indexPath.row]
+        performSegue(withIdentifier: segueIdentifier, sender: pizzaSelect)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 106.0
+    }
 }
 
 extension ChoiceViewController: UITextFieldDelegate {
@@ -122,11 +134,6 @@ extension ChoiceViewController: UITextFieldDelegate {
             pizzaTableView.reloadData()
         }
         return true
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let pizzaSelect = viewModel.listPizza[indexPath.row]
-        performSegue(withIdentifier: segueIdentifier, sender: pizzaSelect)
     }
 }
 

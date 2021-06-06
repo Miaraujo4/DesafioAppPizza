@@ -21,9 +21,11 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var sizeP: UIButton!
     @IBOutlet weak var sizeM: UIButton!
     @IBOutlet weak var sizeG: UIButton!
+    @IBOutlet weak var buyButton: UIButton!
     
     // MARK: - Properties
     var viewModelDetail: DetailViewModel = DetailViewModel()
+    private let identifierSegue: String = "sucessSegue"
     
     // MARK: - Func
     override func viewDidLoad() {
@@ -34,6 +36,9 @@ class DetailViewController: UIViewController {
         sizeP.layer.cornerRadius = 10
         sizeM.layer.cornerRadius = 10
         sizeG.layer.cornerRadius = 10
+        sizeP.backgroundColor = UIColor(red: 0.478, green: 0.776, blue: 0.31, alpha: 1)
+        sizeP.setTitleColor(UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1), for: .normal)
+        
     }
     
     func formatingViewDetail() {
@@ -74,6 +79,9 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func buttonBuyPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: identifierSegue, sender: nil)
+
     }
+
 
 }
