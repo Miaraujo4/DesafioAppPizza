@@ -23,16 +23,7 @@ class ChoiceViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         registerCell()
         setIcon()
-        viewModel.getPizzas { didGetPizzas in
-            DispatchQueue.main.async {
-                if didGetPizzas {
-                    self.pizzaTableView.reloadData()
-                } else {
-                    print("No Data")
-                }
-            }
-        }
-        
+        getPizzas()
         // Do any additional setup after loading the view.
     }
     
@@ -60,6 +51,22 @@ class ChoiceViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     //MARK: - Private Function
+    private func getPizzas() {
+        viewModel.getPizzas { didGetPizzas, error in
+            DispatchQueue.main.async {
+                if didGetPizzas {
+                    self.pizzaTableView.reloadData()
+                } else {
+                    let cancel = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+                    let tryAgain = UIAlertAction(title: "Tentar novamente", style: .default) { _ in
+                        self.getPizzas()
+                    }
+                    self.showAlert(title: error?.title ?? "", description: error?.description ?? "", actions: [cancel, tryAgain])
+                }
+            }
+        }
+    }
+    
     private func setIcon() {
         let searchImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 15.63, height: 15.78))
         

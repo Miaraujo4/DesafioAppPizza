@@ -17,6 +17,8 @@
 		AC5233FC266911BC0072976C /* ChoiceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5233FB266911BC0072976C /* ChoiceStoryboard.storyboard */; };
 		AC52340026691B0A0072976C /* PizzaManagerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5233FF26691B0A0072976C /* PizzaManagerApi.swift */; };
 		AC52340626691E630072976C /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52340526691E630072976C /* PizzaModel.swift */; };
+		AC61FA75266EB34B003C75D8 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61FA74266EB34B003C75D8 /* ErrorModel.swift */; };
+		AC61FA7A266EB5F4003C75D8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61FA79266EB5F4003C75D8 /* UIViewControllerExtension.swift */; };
 		ACB46073266967230078DC20 /* ChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46072266967230078DC20 /* ChoiceViewModel.swift */; };
 		ACB4607C266971CC0078DC20 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4607B266971CC0078DC20 /* HttpError.swift */; };
 		ACB46082266992720078DC20 /* ImageUrlConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46081266992720078DC20 /* ImageUrlConvert.swift */; };
@@ -42,6 +44,8 @@
 		AC5233FB266911BC0072976C /* ChoiceStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChoiceStoryboard.storyboard; sourceTree = "<group>"; };
 		AC5233FF26691B0A0072976C /* PizzaManagerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaManagerApi.swift; sourceTree = "<group>"; };
 		AC52340526691E630072976C /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		AC61FA74266EB34B003C75D8 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		AC61FA79266EB5F4003C75D8 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		ACB46072266967230078DC20 /* ChoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewModel.swift; sourceTree = "<group>"; };
 		ACB4607B266971CC0078DC20 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		ACB46081266992720078DC20 /* ImageUrlConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlConvert.swift; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 			children = (
 				ACB4607B266971CC0078DC20 /* HttpError.swift */,
 				ACB46081266992720078DC20 /* ImageUrlConvert.swift */,
+				AC61FA74266EB34B003C75D8 /* ErrorModel.swift */,
+				AC61FA79266EB5F4003C75D8 /* UIViewControllerExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -343,7 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC61FA75266EB34B003C75D8 /* ErrorModel.swift in Sources */,
 				ACB460B1266BD6D30078DC20 /* SucessViewController.swift in Sources */,
+				AC61FA7A266EB5F4003C75D8 /* UIViewControllerExtension.swift in Sources */,
 				ACB4609E266AC6660078DC20 /* DetailViewController.swift in Sources */,
 				AC5233AA2667E7920072976C /* ViewController.swift in Sources */,
 				ACB4607C266971CC0078DC20 /* HttpError.swift in Sources */,

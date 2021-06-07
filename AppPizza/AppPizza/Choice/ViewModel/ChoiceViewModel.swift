@@ -10,7 +10,7 @@ import Foundation
 class ChoiceViewModel {
     
     // MARK: - Private Properties
-    private let api: PizzaManagerApi
+    private let api: PizzaManagerProtocol
     private var listPizzaHelper: [PizzaInfo]
     
     // MARK: - Properties
@@ -25,15 +25,26 @@ class ChoiceViewModel {
     }
     
     // MARK: - Function
-    func getPizzas(callback: @escaping(_ wasSafe: Bool) -> Void) {
+    func getPizzas(callback: @escaping(_ wasComplete: Bool, _ error: ErrorModel?) -> Void) {
         api.getPizzas { result in
             switch result {
             case .success(let pizzas):
                 self.listPizza = pizzas
                 self.listPizzaHelper = pizzas
-                callback(true)
-            case .failure( _):
-                callback(false)
+                callback(true, nil)
+            case .failure(let htttpError):
+                let title: String = "Erro"
+                var description: String = ""
+                switch htttpError {
+                case .badRequest:
+                    description = "Não foi possivel conectar ao servidor"
+                case .notData:
+                    description = "Não foi possivel acessar a informação"
+                case .urlNotFound:
+                    description = "Não encontrado"
+                }
+                let error = ErrorModel(title: title, description: description)
+                callback(false, error)
             }
         }
     }
