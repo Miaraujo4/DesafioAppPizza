@@ -17,14 +17,10 @@ class PizzaManagerApi: PizzaManagerProtocol {
     let pizzaURL = "https://p3teufi0k9.execute-api.us-east-1.amazonaws.com/v1/pizza"
     
     func getPizzas(callBack: @escaping (Result<[PizzaInfo], HttpError>) -> Void) {
-        print("Mi: Comenzo aqui") //1
-        //1. Create a URL
+       
         if let url = URL(string: pizzaURL) {
-            //2. Create a URLSession
             let session = URLSession(configuration: .default)
-            //3. Give the session a task - request
             let task = session.dataTask(with: url) { (data, response, error) in
-                print("Mi: Entro en el closure") //2
                 if error != nil {
                     callBack(.failure(.notData))
                     return
@@ -38,14 +34,11 @@ class PizzaManagerApi: PizzaManagerProtocol {
                 } else {
                     callBack(.failure(.notData))
                 }
-                print("Mi: Termino el closure") //3
             }
-            //4. Start the task
             task.resume()
         } else {
             callBack(.failure(.urlNotFound))
         }
-        print("Mi: Termina aqui") //4
     }
     
     func parseJson(_ pizzaData: Data) -> [PizzaInfo]? {
