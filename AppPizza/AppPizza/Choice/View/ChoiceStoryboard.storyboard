@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h1a-GK-46T">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choice View Controller-->
+        <scene sceneID="p6I-H8-Quy">
+            <objects>
+                <viewController id="h1a-GK-46T" customClass="ChoiceViewController" customModule="AppPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NEG-10-Gkp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qrq-Lr-i6P">
+                                <rect key="frame" x="16" y="73" width="382" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="cKm-Vt-jJo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha seu sabor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqK-eL-T6T">
+                                <rect key="frame" x="15" y="140" width="383" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="GHh-4n-P1U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T6U-ko-91O">
+                                <rect key="frame" x="0.0" y="182" width="414" height="714"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h1a-GK-46T" id="U45-gn-Hvd"/>
+                                    <outlet property="delegate" destination="h1a-GK-46T" id="rH6-o4-6Fa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Edd-LW-FKU"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="T6U-ko-91O" firstAttribute="trailing" secondItem="Edd-LW-FKU" secondAttribute="trailing" id="1J0-o2-hva"/>
+                            <constraint firstItem="T6U-ko-91O" firstAttribute="leading" secondItem="Edd-LW-FKU" secondAttribute="leading" id="1rg-l6-0lf"/>
+                            <constraint firstItem="Edd-LW-FKU" firstAttribute="trailing" secondItem="qrq-Lr-i6P" secondAttribute="trailing" constant="16" id="2Uh-uD-Pab"/>
+                            <constraint firstItem="qrq-Lr-i6P" firstAttribute="top" secondItem="Edd-LW-FKU" secondAttribute="top" constant="29" id="3kP-h2-PA9"/>
+                            <constraint firstItem="qrq-Lr-i6P" firstAttribute="leading" secondItem="Edd-LW-FKU" secondAttribute="leading" constant="16" id="FI9-gV-EfJ"/>
+                            <constraint firstAttribute="bottom" secondItem="T6U-ko-91O" secondAttribute="bottom" id="Iuy-oA-lXm"/>
+                            <constraint firstItem="T6U-ko-91O" firstAttribute="leading" secondItem="Edd-LW-FKU" secondAttribute="leading" id="JYV-7B-KM7"/>
+                            <constraint firstItem="zqK-eL-T6T" firstAttribute="leading" secondItem="Edd-LW-FKU" secondAttribute="leading" constant="15" id="Q0h-7h-Man"/>
+                            <constraint firstAttribute="bottom" secondItem="T6U-ko-91O" secondAttribute="bottom" id="axx-Rq-xq6"/>
+                            <constraint firstItem="T6U-ko-91O" firstAttribute="trailing" secondItem="Edd-LW-FKU" secondAttribute="trailing" id="c3p-QO-LA3"/>
+                            <constraint firstItem="zqK-eL-T6T" firstAttribute="top" secondItem="qrq-Lr-i6P" secondAttribute="bottom" constant="32" id="sfc-Wx-Jl9"/>
+                            <constraint firstItem="Edd-LW-FKU" firstAttribute="trailing" secondItem="zqK-eL-T6T" secondAttribute="trailing" constant="16" id="vIl-eR-1E7"/>
+                            <constraint firstItem="T6U-ko-91O" firstAttribute="top" secondItem="zqK-eL-T6T" secondAttribute="bottom" constant="22" id="zab-ET-YVD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pizzaTableView" destination="T6U-ko-91O" id="dzB-X0-R5l"/>
+                        <outlet property="searchTextField" destination="qrq-Lr-i6P" id="JXG-QU-Lt0"/>
+                        <segue destination="qJf-V8-g4l" kind="show" identifier="detailSegue" id="uKF-mj-CCm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3f-eG-u4U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="109.82142857142857"/>
+        </scene>
+        <!--DetailStoryboard-->
+        <scene sceneID="McO-Ki-zAk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailStoryboard" id="qJf-V8-g4l" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="e3H-g0-3Jd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Rn-l9-3yx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="110"/>
+        </scene>
+    </scenes>
+</document>

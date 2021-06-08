@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a9y-AV-Bnf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sucess View Controller-->
+        <scene sceneID="GQ6-Lm-3ma">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="a9y-AV-Bnf" customClass="SucessViewController" customModule="AppPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GEL-BS-cPX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compra efetuada com sucesso!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nM4-Sy-QM6">
+                                <rect key="frame" x="42.5" y="161.5" width="331" height="107.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group11" translatesAutoresizingMaskIntoConstraints="NO" id="dz5-zx-4xT">
+                                <rect key="frame" x="115" y="325" width="186" height="186"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPh-wk-cQf">
+                                <rect key="frame" x="56" y="561" width="302" height="40"/>
+                                <color key="backgroundColor" red="0.47843137254901957" green="0.77647058823529413" blue="0.30980392156862746" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6QZ-0A-cit"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Voltar"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="a9y-AV-Bnf" eventType="touchUpInside" id="wVu-sr-9B7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hCL-LZ-2tt"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nM4-Sy-QM6" firstAttribute="width" secondItem="GEL-BS-cPX" secondAttribute="width" multiplier="0.8" id="1iM-lL-Zrb"/>
+                            <constraint firstItem="dz5-zx-4xT" firstAttribute="top" secondItem="nM4-Sy-QM6" secondAttribute="bottom" constant="56" id="4Da-rg-yad"/>
+                            <constraint firstItem="dz5-zx-4xT" firstAttribute="centerY" secondItem="GEL-BS-cPX" secondAttribute="centerY" constant="-30" id="4M5-zq-NTQ"/>
+                            <constraint firstItem="hCL-LZ-2tt" firstAttribute="trailing" secondItem="MPh-wk-cQf" secondAttribute="trailing" constant="56" id="4dl-id-wre"/>
+                            <constraint firstItem="dz5-zx-4xT" firstAttribute="height" secondItem="GEL-BS-cPX" secondAttribute="height" multiplier="0.207589" id="6qf-xK-UZi"/>
+                            <constraint firstItem="MPh-wk-cQf" firstAttribute="leading" secondItem="hCL-LZ-2tt" secondAttribute="leading" constant="56" id="K92-bi-l2K"/>
+                            <constraint firstItem="dz5-zx-4xT" firstAttribute="centerX" secondItem="GEL-BS-cPX" secondAttribute="centerX" constant="1" id="ONi-1d-JYH"/>
+                            <constraint firstItem="dz5-zx-4xT" firstAttribute="width" secondItem="GEL-BS-cPX" secondAttribute="width" multiplier="0.449275" id="Uve-g3-39Q"/>
+                            <constraint firstItem="nM4-Sy-QM6" firstAttribute="centerX" secondItem="dz5-zx-4xT" secondAttribute="centerX" id="Y6c-KJ-lZb"/>
+                            <constraint firstItem="MPh-wk-cQf" firstAttribute="top" secondItem="dz5-zx-4xT" secondAttribute="bottom" constant="50" id="YKD-jl-qqO"/>
+                            <constraint firstItem="nM4-Sy-QM6" firstAttribute="height" secondItem="GEL-BS-cPX" secondAttribute="height" multiplier="0.12" id="fN4-WI-nUJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="MPh-wk-cQf" id="qZy-Ya-7RQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gxt-WO-x4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="group11" width="186" height="186"/>
+    </resources>
+</document>
