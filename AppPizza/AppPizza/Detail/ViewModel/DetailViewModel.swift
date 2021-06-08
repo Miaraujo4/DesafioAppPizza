@@ -23,6 +23,6 @@ class DetailViewModel {
             price = pizza!.priceG
         }
         
-       return "R$ " + String(format: "%.2f", price).replacingOccurrences(of: ".", with: ",")
+        return "R$ " + String(format: "%.2f", price).replacingOccurrences(of: ".", with: ",")
     }
 }

@@ -17,8 +17,15 @@
 		AC5233FC266911BC0072976C /* ChoiceStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5233FB266911BC0072976C /* ChoiceStoryboard.storyboard */; };
 		AC52340026691B0A0072976C /* PizzaManagerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5233FF26691B0A0072976C /* PizzaManagerApi.swift */; };
 		AC52340626691E630072976C /* PizzaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC52340526691E630072976C /* PizzaModel.swift */; };
+		AC5357AE266EEE90002598C4 /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5357AD266EEE90002598C4 /* LoginViewModelTest.swift */; };
+		AC5357B8266EF295002598C4 /* ChoiceViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5357B7266EF295002598C4 /* ChoiceViewModelTest.swift */; };
+		AC5357C0266EFE13002598C4 /* DetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5357BF266EFE13002598C4 /* DetailViewModelTest.swift */; };
 		AC61FA75266EB34B003C75D8 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61FA74266EB34B003C75D8 /* ErrorModel.swift */; };
 		AC61FA7A266EB5F4003C75D8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61FA79266EB5F4003C75D8 /* UIViewControllerExtension.swift */; };
+		AC61FA80266EC1B8003C75D8 /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61FA7F266EC1B8003C75D8 /* LoginApi.swift */; };
+		AC61FA83266EC28D003C75D8 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61FA82266EC28D003C75D8 /* LoginModel.swift */; };
+		AC61FA8B266EDA7D003C75D8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61FA8A266EDA7D003C75D8 /* LoginViewModel.swift */; };
+		AC61FA8E266EDDD1003C75D8 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC61FA8D266EDDD1003C75D8 /* LoginResponse.swift */; };
 		ACB46073266967230078DC20 /* ChoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46072266967230078DC20 /* ChoiceViewModel.swift */; };
 		ACB4607C266971CC0078DC20 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4607B266971CC0078DC20 /* HttpError.swift */; };
 		ACB46082266992720078DC20 /* ImageUrlConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46081266992720078DC20 /* ImageUrlConvert.swift */; };
@@ -30,6 +37,16 @@
 		ACB460AB266B19100078DC20 /* SucessStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB460AA266B19100078DC20 /* SucessStoryboard.storyboard */; };
 		ACB460B1266BD6D30078DC20 /* SucessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB460B0266BD6D30078DC20 /* SucessViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC5357A2266EEE5F002598C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC52339A2667E7910072976C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC5233A12667E7910072976C;
+			remoteInfo = AppPizza;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AC5233A22667E7920072976C /* AppPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,8 +61,17 @@
 		AC5233FB266911BC0072976C /* ChoiceStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChoiceStoryboard.storyboard; sourceTree = "<group>"; };
 		AC5233FF26691B0A0072976C /* PizzaManagerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaManagerApi.swift; sourceTree = "<group>"; };
 		AC52340526691E630072976C /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
+		AC53579D266EEE5F002598C4 /* AppPizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppPizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5357A1266EEE5F002598C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5357AD266EEE90002598C4 /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
+		AC5357B7266EF295002598C4 /* ChoiceViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewModelTest.swift; sourceTree = "<group>"; };
+		AC5357BF266EFE13002598C4 /* DetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTest.swift; sourceTree = "<group>"; };
 		AC61FA74266EB34B003C75D8 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		AC61FA79266EB5F4003C75D8 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		AC61FA7F266EC1B8003C75D8 /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
+		AC61FA82266EC28D003C75D8 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		AC61FA8A266EDA7D003C75D8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AC61FA8D266EDDD1003C75D8 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		ACB46072266967230078DC20 /* ChoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewModel.swift; sourceTree = "<group>"; };
 		ACB4607B266971CC0078DC20 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		ACB46081266992720078DC20 /* ImageUrlConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlConvert.swift; sourceTree = "<group>"; };
@@ -66,6 +92,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC53579A266EEE5F002598C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5233A42667E7920072976C /* AppPizza */,
+				AC53579E266EEE5F002598C4 /* AppPizzaTests */,
 				AC5233A32667E7920072976C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5233A22667E7920072976C /* AppPizza.app */,
+				AC53579D266EEE5F002598C4 /* AppPizzaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +156,8 @@
 		AC5233BD2667F5270072976C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC61FA82266EC28D003C75D8 /* LoginModel.swift */,
+				AC61FA8D266EDDD1003C75D8 /* LoginResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +165,7 @@
 		AC5233BE2667F5630072976C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AC61FA8A266EDA7D003C75D8 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -135,6 +173,7 @@
 		AC5233BF2667F6200072976C /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				AC61FA7E266EC163003C75D8 /* API */,
 				AC5233BE2667F5630072976C /* ViewModel */,
 				AC5233BD2667F5270072976C /* Model */,
 				AC5233BA2667F4F50072976C /* View */,
@@ -197,6 +236,73 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		AC53579E266EEE5F002598C4 /* AppPizzaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC5357BD266EFDE8002598C4 /* Detail */,
+				AC5357B5266EF255002598C4 /* Choice */,
+				AC5357A9266EEE66002598C4 /* Login */,
+				AC5357A1266EEE5F002598C4 /* Info.plist */,
+			);
+			path = AppPizzaTests;
+			sourceTree = "<group>";
+		};
+		AC5357A9266EEE66002598C4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AC5357AC266EEE71002598C4 /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AC5357AC266EEE71002598C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC5357AD266EEE90002598C4 /* LoginViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC5357B5266EF255002598C4 /* Choice */ = {
+			isa = PBXGroup;
+			children = (
+				AC5357B6266EF25E002598C4 /* ViewModel */,
+			);
+			path = Choice;
+			sourceTree = "<group>";
+		};
+		AC5357B6266EF25E002598C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC5357B7266EF295002598C4 /* ChoiceViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC5357BD266EFDE8002598C4 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				AC5357BE266EFDF0002598C4 /* ViewModel */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		AC5357BE266EFDF0002598C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC5357BF266EFE13002598C4 /* DetailViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC61FA7E266EC163003C75D8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AC61FA7F266EC1B8003C75D8 /* LoginApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		ACB4607A266971C10078DC20 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,7 +318,6 @@
 			isa = PBXGroup;
 			children = (
 				ACB46098266AB52C0078DC20 /* ViewModel */,
-				ACB46097266AB51F0078DC20 /* Model */,
 				ACB46096266AB5160078DC20 /* View */,
 				ACB46099266AB53A0078DC20 /* Controller */,
 			);
@@ -225,13 +330,6 @@
 				ACB4609A266AB6040078DC20 /* DetailStoryboard.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		ACB46097266AB51F0078DC20 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		ACB46098266AB52C0078DC20 /* ViewModel */ = {
@@ -295,6 +393,24 @@
 			productReference = AC5233A22667E7920072976C /* AppPizza.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AC53579C266EEE5F002598C4 /* AppPizzaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5357A6266EEE5F002598C4 /* Build configuration list for PBXNativeTarget "AppPizzaTests" */;
+			buildPhases = (
+				AC535799266EEE5F002598C4 /* Sources */,
+				AC53579A266EEE5F002598C4 /* Frameworks */,
+				AC53579B266EEE5F002598C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5357A3266EEE5F002598C4 /* PBXTargetDependency */,
+			);
+			name = AppPizzaTests;
+			productName = AppPizzaTests;
+			productReference = AC53579D266EEE5F002598C4 /* AppPizzaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -306,6 +422,10 @@
 				TargetAttributes = {
 					AC5233A12667E7910072976C = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					AC53579C266EEE5F002598C4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AC5233A12667E7910072976C;
 					};
 				};
 			};
@@ -323,6 +443,7 @@
 			projectRoot = "";
 			targets = (
 				AC5233A12667E7910072976C /* AppPizza */,
+				AC53579C266EEE5F002598C4 /* AppPizzaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,6 +463,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC53579B266EEE5F002598C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -355,19 +483,41 @@
 				ACB4609E266AC6660078DC20 /* DetailViewController.swift in Sources */,
 				AC5233AA2667E7920072976C /* ViewController.swift in Sources */,
 				ACB4607C266971CC0078DC20 /* HttpError.swift in Sources */,
+				AC61FA8E266EDDD1003C75D8 /* LoginResponse.swift in Sources */,
 				AC5233A62667E7920072976C /* AppDelegate.swift in Sources */,
 				AC52340626691E630072976C /* PizzaModel.swift in Sources */,
+				AC61FA8B266EDA7D003C75D8 /* LoginViewModel.swift in Sources */,
+				AC61FA83266EC28D003C75D8 /* LoginModel.swift in Sources */,
 				ACB460892669A3770078DC20 /* PizzaTableViewCell.swift in Sources */,
 				AC5233A82667E7920072976C /* SceneDelegate.swift in Sources */,
 				ACB460A1266ADD910078DC20 /* DetailViewModel.swift in Sources */,
 				AC52340026691B0A0072976C /* PizzaManagerApi.swift in Sources */,
+				AC61FA80266EC1B8003C75D8 /* LoginApi.swift in Sources */,
 				ACB46082266992720078DC20 /* ImageUrlConvert.swift in Sources */,
 				AC5233F8266910610072976C /* ChoiceViewController.swift in Sources */,
 				ACB46073266967230078DC20 /* ChoiceViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC535799266EEE5F002598C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5357AE266EEE90002598C4 /* LoginViewModelTest.swift in Sources */,
+				AC5357B8266EF295002598C4 /* ChoiceViewModelTest.swift in Sources */,
+				AC5357C0266EFE13002598C4 /* DetailViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC5357A3266EEE5F002598C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC5233A12667E7910072976C /* AppPizza */;
+			targetProxy = AC5357A2266EEE5F002598C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC5233AB2667E7920072976C /* Main.storyboard */ = {
@@ -541,6 +691,44 @@
 			};
 			name = Release;
 		};
+		AC5357A4266EEE5F002598C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppPizzaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilenaCompany.AppPizzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppPizza.app/AppPizza";
+			};
+			name = Debug;
+		};
+		AC5357A5266EEE5F002598C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppPizzaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MilenaCompany.AppPizzaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppPizza.app/AppPizza";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -558,6 +746,15 @@
 			buildConfigurations = (
 				AC5233B72667E79E0072976C /* Debug */,
 				AC5233B82667E79E0072976C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5357A6266EEE5F002598C4 /* Build configuration list for PBXNativeTarget "AppPizzaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5357A4266EEE5F002598C4 /* Debug */,
+				AC5357A5266EEE5F002598C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

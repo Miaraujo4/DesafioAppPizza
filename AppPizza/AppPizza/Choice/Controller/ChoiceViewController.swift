@@ -68,12 +68,13 @@ class ChoiceViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     private func setIcon() {
-        let searchImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 15.63, height: 15.78))
-        
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        searchTextField.leftView = containerView
+        let searchImage = UIImageView(frame: CGRect(x: 10, y: 4.18, width: 15.63, height: 15.78))
         searchImage.image = #imageLiteral(resourceName: "searchIcon")
         searchImage.contentMode = .scaleAspectFit
         searchImage.tintColor = #colorLiteral(red: 0.2352941176, green: 0.2352941176, blue: 0.262745098, alpha: 1)
-        searchTextField.leftView = searchImage
+        containerView.addSubview(searchImage)
         searchTextField.leftViewMode = .always
     }
     

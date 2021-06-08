@@ -45,7 +45,7 @@
                                         <rect key="frame" x="0.0" y="61" width="374" height="43.5"/>
                                         <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.5450980392" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -60,7 +60,7 @@
                                     <color key="titleColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="teR-ta-w9f" kind="show" identifier="toChoiceView" id="Is5-Fa-0VE"/>
+                                    <action selector="acessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xIh-kd-iHb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyl-1q-aIE">
@@ -90,6 +90,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xSn-OS-JV1"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="awt-Ou-DYl" id="DVn-LF-xXN"/>
+                        <outlet property="userTextField" destination="g3s-Pd-deW" id="Jta-vW-u02"/>
+                        <segue destination="teR-ta-w9f" kind="show" identifier="segueChoice" id="aab-rh-Yld"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
